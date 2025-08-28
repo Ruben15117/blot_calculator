@@ -9,28 +9,59 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = BleakDarkPrimary,
+    onPrimary = BleakDarkOnPrimary,
+    primaryContainer = BleakDarkPrimaryContainer,
+    onPrimaryContainer = BleakDarkOnPrimaryContainer,
+    secondary = BleakDarkSecondary,
+    onSecondary = BleakDarkOnSecondary,
+    secondaryContainer = BleakDarkSecondaryContainer,
+    onSecondaryContainer = BleakDarkOnSecondaryContainer,
+    tertiary = BleakDarkTertiary,
+    onTertiary = BleakDarkOnTertiary,
+    tertiaryContainer = BleakDarkTertiaryContainer,
+    onTertiaryContainer = BleakDarkOnTertiaryContainer,
+    error = BleakDarkError,
+    onError = BleakDarkOnError,
+    errorContainer = BleakDarkErrorContainer,
+    onErrorContainer = BleakDarkOnErrorContainer,
+    background = BleakDarkBackground,
+    onBackground = BleakDarkOnBackground,
+    surface = BleakDarkSurface,
+    onSurface = BleakDarkOnSurface,
+    surfaceVariant = BleakDarkSurfaceVariant,
+    onSurfaceVariant = BleakDarkOnSurfaceVariant,
+    outline = BleakDarkOutline
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    primary = BleakLightPrimary,
+    onPrimary = BleakLightOnPrimary,
+    primaryContainer = BleakLightPrimaryContainer,
+    onPrimaryContainer = BleakLightOnPrimaryContainer,
+    secondary = BleakLightSecondary,
+    onSecondary = BleakLightOnSecondary,
+    secondaryContainer = BleakLightSecondaryContainer,
+    onSecondaryContainer = BleakLightOnSecondaryContainer,
+    tertiary = BleakLightTertiary,
+    onTertiary = BleakLightOnTertiary,
+    tertiaryContainer = BleakLightTertiaryContainer,
+    onTertiaryContainer = BleakLightOnTertiaryContainer,
+    error = BleakLightError,
+    onError = BleakLightOnError,
+    errorContainer = BleakLightErrorContainer,
+    onErrorContainer = BleakLightOnErrorContainer,
+    background = BleakLightBackground,
+    onBackground = BleakLightOnBackground,
+    surface = BleakLightSurface,
+    onSurface = BleakLightOnSurface,
+    surfaceVariant = BleakLightSurfaceVariant,
+    onSurfaceVariant = BleakLightOnSurfaceVariant,
+    outline = BleakLightOutline
 )
 
 @Composable
