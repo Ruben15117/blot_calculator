@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Bloti Hashiv</string>
+    <string name="delete">Delete</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_2">Team 2</string>
+    <string name="x" translatable="false">X</string>
+    <string name="n_a">N/A</string>
+    <string name="K" translatable="false">K</string>
+    <string name="Q" translatable="false">Q</string>
+    <string name="S" translatable="false">S</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="clear_all">Clear All?</string>
+    <string name="ok">OK</string>
+
 </resources>
