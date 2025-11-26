@@ -11,6 +11,7 @@
     <string name="start">Start</string>
     <string name="end">End</string>
     <string name="clear_all">Clear All?</string>
+    <string name="Boy_x2">Boy x2</string>
     <string name="ok">OK</string>
 
 </resources>
