@@ -54,9 +54,10 @@ fun ScoreScreen(
     val rounds =scoreViewModel.rounds
     LaunchedEffect(key1=Unit) {
         scoreViewModel.setupGame(winScore, boyDouble)
+        rounds.add(Round(0,0,0,""))
+
 
     }
-    rounds.add(Round(0, 0, 0, ""))
     val team1Total = scoreViewModel.team1Total
     val team2Total = scoreViewModel.team2Total
     val winningColor = Color.Green
@@ -68,6 +69,7 @@ fun ScoreScreen(
             .padding(WindowInsets.systemBars.asPaddingValues())
             .padding(16.dp)
     ) {
+        //target selector
         TargetRowList(
             targetValue = uiState.target,
             isInactive = uiState.isRoundStarted,
@@ -81,8 +83,10 @@ fun ScoreScreen(
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically,
         ) {
+
             DeleteButton(uiState.isRoundStarted, rounds)
 
+            //kaput quansh sur buttons
             Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
 
                 TargetModifierButton(
@@ -104,6 +108,7 @@ fun ScoreScreen(
                     onClick = scoreViewModel::toggleSur
                 )
             }
+            //round start
             Button(
                 onClick = scoreViewModel::toggleRoundState
             ) {
@@ -116,6 +121,7 @@ fun ScoreScreen(
                 )
             }
         }
+        // team labels
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -143,6 +149,7 @@ fun ScoreScreen(
                 textAlign = TextAlign.Center
             )
         }
+        //round calculator
         if (uiState.isRoundStarted) {
             Row {
                 Box(
@@ -190,6 +197,7 @@ fun ScoreScreen(
                     )
                 }
             }
+            //rounds history
         } else {
             LazyColumn(modifier = Modifier.weight(1f)) {
                 itemsIndexed(rounds) { index, round ->
@@ -226,8 +234,8 @@ fun ScoreScreen(
 
         Spacer(modifier = Modifier.height(8.dp))
 
+        //total score block
         Column {
-
             Row {
                 Text(
                     "$team1Total",
